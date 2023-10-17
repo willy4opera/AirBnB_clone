@@ -25,7 +25,7 @@ class TestHBNBCommand_prompting(unittest.TestCase):
     """Unittests for testing prompting of the HBNB command interpreter."""
 
     def test_prompt_string(self):
-        self.assertEqual("(devHBNB) ", HBNBCommand.prompt)
+        self.assertEqual("(hbnb) ", HBNBCommand.prompt)
 
     def test_dev_empty_line(self):
         with patch("sys.stdout", new=StringIO()) as output:
